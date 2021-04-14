@@ -33,6 +33,7 @@ const main = async () => {
 
     const fileSize = (`${stats.size/1000} ko`) 
     console.log(`the content of the site ${chalk.blue(process.argv[2])} has been copied into the ${chalk.blue(fileOutput)} file and the file weighs approximately ${chalk.blue(fileSize)}.`)
+    //console.log(response.headers)
   } catch (e) {
     console.log(e.message)
   }
